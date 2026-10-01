@@ -1,0 +1,160 @@
+.ParteSuperior{
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+
+h1 {
+    font-size: 2.5em;
+}
+
+img.fotoLogo{
+    width: 150px;
+    height: auto;
+    border-radius: 0%;
+}
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+}
+main{
+    padding: 20px;
+}
+button{
+    background-color: rgba(6, 153, 166, 1);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+
+h3{
+    color:rgba(158, 140, 108, 1);
+}
+
+/* Footer: centrar y usar mismo fondo que header */
+footer{
+    background-color: #f4f4f4; /* mismo color que .ParteSuperior */
+    padding: 24px 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+footer h2, footer p{
+    margin: 0;
+}
+
+footer > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilos para pantallas medianas (tablet) */
+@media (min-width: 768px) {
+   main{
+        flex-direction: column;
+        margin-left:144px ;
+        margin-right: 144px;
+    } 
+    
+}
+
+/* Estilos para pantallas grandes (escritorio) */
+@media (min-width: 1440px) {
+   /* Mostrar contenido en dos columnas en pantallas grandes */
+   .divMain{
+       display: flex;
+       flex-direction: row;
+       gap: 40px; /* espacio entre columnas */
+       align-items: flex-start;
+    }
+
+   /* Proporciones: derecha más ancha que la columna izquierda */
+   .parteInferiorDerecha{
+       flex: 2 1 0;
+   }
+
+   /* Mantener proporciones y forzar orden para invertir columnas visualmente */
+   .parteInferiorDerecha{
+       flex: 2 1 0;
+       order: 2; /* aparecerá a la derecha */
+   }
+
+   .ParteInferiorIzquierda{
+       flex: 1 1 0;
+       order: 1; /* aparecerá a la izquierda */
+   }
+   .ParteSuperior{
+    height: 747px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    padding: 144px;
+   }
+   .ParteSuperior img:not(.fotoLogo) {
+       width: 600px;
+       height: 600px;
+       margin-right: 20px;
+   }
+   .ParteSuperior .contenido-derecha {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       text-align: left;
+   }
+   .ParteSuperior h2 {
+       margin: 0;
+       font-size: 2.5em;
+   }
+   .ParteSuperior h1 {
+       margin: 10px 0 20px 0;
+       font-size: 3em;
+   }
+   .ParteSuperior button {
+       margin-top: 20px;
+   }
+   .ParteSuperior .contenido-derecha h3 {
+       margin: 0 0 10px 0;
+       font-size: 2em;
+   }
+   .ParteSuperior .contenido-derecha h1 {
+       margin: 0 0 20px 0;
+       font-size: 15em; 
+   }
+   .ParteSuperior .contenido-derecha {
+       display: flex;
+       flex-direction: column;
+       align-items: flex-start;
+       text-align: left;
+   }
+   .sect{
+       margin-bottom: 100px;
+   }
+   h2{
+         font-size: 3em;
+   }
+   .apartados{
+       margin-bottom: 70px;
+   }
+   p,h3{
+         font-size: 1.5em;
+   }
+}
